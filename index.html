@@ -242,10 +242,16 @@
 
         .scroll-indicator {
             position: absolute;
-            bottom: 40px;
+            bottom: 24px;
             left: 50%;
             transform: translateX(-50%);
             animation: bounce 2s infinite;
+        }
+
+        @media (max-height: 700px) {
+            .scroll-indicator {
+                display: none;
+            }
         }
 
         .scroll-indicator svg {
@@ -997,11 +1003,9 @@
             <div class="comparison-grid animate-on-scroll">
                 <div class="comparison-item">
                     <img src="./img/before_requirement_doc.png" alt="Chaotic back-and-forth communication without documentation">
-                    <div class="comparison-label before">Before Requirement Doc</div>
                 </div>
                 <div class="comparison-item">
                     <img src="./img/with_requirement_doc.png" alt="Organized communication flow with requirement document as single source of truth">
-                    <div class="comparison-label after">After Requirement Doc</div>
                 </div>
             </div>
 
