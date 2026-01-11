@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bridging the Communication Gap: How a Single Document Transformed Software Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
     <style>
         /* Dark Theme (Default) */
         :root {
@@ -79,7 +82,10 @@
         }
 
         /* Typography */
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Instrument Serif', Georgia, serif;
             font-weight: 400;
             line-height: 1.2;
@@ -158,7 +164,7 @@
             text-align: center;
             padding: 60px 24px;
             position: relative;
-            background: 
+            background:
                 radial-gradient(ellipse 80% 50% at 50% -20%, var(--hero-gradient-1), transparent),
                 radial-gradient(ellipse 60% 40% at 80% 60%, var(--hero-gradient-2), transparent),
                 var(--bg-primary);
@@ -172,7 +178,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: 
+            background-image:
                 linear-gradient(var(--hero-grid-color) 1px, transparent 1px),
                 linear-gradient(90deg, var(--hero-grid-color) 1px, transparent 1px);
             background-size: 60px 60px;
@@ -308,7 +314,8 @@
             color: var(--text-secondary);
         }
 
-        p strong, p b {
+        p strong,
+        p b {
             color: var(--text-primary);
             font-weight: 600;
         }
@@ -380,7 +387,7 @@
             direction: rtl;
         }
 
-        .content-block.reverse > * {
+        .content-block.reverse>* {
             direction: ltr;
         }
 
@@ -766,6 +773,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -773,12 +781,19 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateX(-50%) translateY(0);
             }
+
             40% {
                 transform: translateX(-50%) translateY(-10px);
             }
+
             60% {
                 transform: translateX(-50%) translateY(-5px);
             }
@@ -934,16 +949,19 @@
         }
     </style>
 </head>
+
 <body>
     <div class="progress-bar" id="progressBar"></div>
 
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <svg class="icon-moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/>
+            <path
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
         </svg>
         <svg class="icon-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+            <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
         </svg>
         <span class="theme-toggle-text"></span>
     </button>
@@ -962,8 +980,10 @@
     <!-- Hero Section -->
     <header class="hero">
         <span class="hero-badge">Case Study</span>
-        <h1 class="hero-title">Bridging the Communication Gap: How a Single Document Transformed the Way We Craft Software</h1>
-        <p class="hero-subtitle">A deep dive into how structured requirements documentation reduced feature delivery from 6 sprints to 1—and transformed team collaboration forever.</p>
+        <h1 class="hero-title">Bridging the Communication Gap: How a Single Document Transformed the Way We Craft
+            Software</h1>
+        <p class="hero-subtitle">A deep dive into how structured requirements documentation reduced feature delivery
+            from 6 sprints to 1—and transformed team collaboration forever.</p>
         <div class="hero-stats">
             <div class="stat">
                 <span class="stat-value">83%</span>
@@ -980,7 +1000,7 @@
         </div>
         <div class="scroll-indicator">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 5v14M5 12l7 7 7-7"/>
+                <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
         </div>
     </header>
@@ -993,32 +1013,49 @@
                 <h2 class="section-title">Opportunity</h2>
 
                 <div class="quote-block animate-on-scroll">
-                    <p>'Every feature request spiraled into an endless back-and-forth—until we broke it with a document.'</p>
+                    <p>'Every feature request spiraled into an endless back-and-forth—until we broke it with a
+                        document.'</p>
                 </div>
 
-                <p class="animate-on-scroll">The first image tells a story most engineering teams know too well: requirements trickling in one message at a time, developers responding reactively, and conversations that spiral endlessly. "We need a login page." Done. "But we need social login." Okay, done. "Can you change the button color?" And on it goes—questions breeding questions, clarity always one more message away.</p>
+                <p class="animate-on-scroll">The first image tells a story most engineering teams know too well:
+                    requirements trickling in one message at a time, developers responding reactively, and conversations
+                    that spiral endlessly. "We need a login page." Done. "But we need social login." Okay, done. "Can
+                    you change the button color?" And on it goes—questions breeding questions, clarity always one more
+                    message away.</p>
             </div>
 
             <!-- Before/After Comparison -->
             <div class="comparison-grid animate-on-scroll">
                 <div class="comparison-item">
-                    <img src="./img/before_requirement_doc.png" alt="Chaotic back-and-forth communication without documentation">
+                    <img src="./img/before_requirement_doc.png"
+                        alt="Chaotic back-and-forth communication without documentation">
                 </div>
                 <div class="comparison-item">
-                    <img src="./img/with_requirement_doc.png" alt="Organized communication flow with requirement document as single source of truth">
+                    <img src="./img/with_requirement_doc.png"
+                        alt="Organized communication flow with requirement document as single source of truth">
                 </div>
             </div>
 
             <div class="content">
-                <p class="animate-on-scroll">The second image shows what changed: a single document that both sides contribute to and draw from. Stakeholders pour their requirements, mockups, and timelines into it. Engineers pull context, rationale, and acceptance criteria from it. One source. Both sides aligned. Questions answered before they're asked.</p>
+                <p class="animate-on-scroll">The second image shows what changed: a single document that both sides
+                    contribute to and draw from. Stakeholders pour their requirements, mockups, and timelines into it.
+                    Engineers pull context, rationale, and acceptance criteria from it. One source. Both sides aligned.
+                    Questions answered before they're asked.</p>
 
                 <div class="highlight animate-on-scroll">
                     The difference between these two pictures? <strong>Six sprints to one.</strong>
                 </div>
 
-                <p class="animate-on-scroll">This was the reality for our cross-functional team that consists of a Team Lead, Business Analysts, Senior Engineers, Mid-level Engineers, and Junior Developers. On paper, we had the talent and structure for success. In practice, we were trapped in the first picture—a knowledge crisis hiding in plain sight.</p>
+                <p class="animate-on-scroll">This was the reality for our cross-functional team that consists of a Team
+                    Lead, Business Analysts, Senior Engineers, Mid-level Engineers, and Junior Developers. On paper, we
+                    had the talent and structure for success. In practice, we were trapped in the first picture—a
+                    knowledge crisis hiding in plain sight.</p>
 
-                <p class="animate-on-scroll">The pattern was painfully familiar. A client requests a feature during a meeting. The attendees—perhaps the Team Lead, one Analyst, one Senior, one Mid, and one Junior—leave with a clear understanding of what needs to be built. They document it in their heads, discuss it over coffee, and begin development. The feature ships... eventually. But not before chaos ensues.</p>
+                <p class="animate-on-scroll">The pattern was painfully familiar. A client requests a feature during a
+                    meeting. The attendees—perhaps the Team Lead, one Analyst, one Senior, one Mid, and one Junior—leave
+                    with a clear understanding of what needs to be built. They document it in their heads, discuss it
+                    over coffee, and begin development. The feature ships... eventually. But not before chaos ensues.
+                </p>
             </div>
         </div>
 
@@ -1026,13 +1063,20 @@
         <div class="container">
             <div class="content">
                 <h3 class="subsection-heading animate-on-scroll">The Telephone Game Effect Continues</h3>
-                <p class="animate-on-scroll">The client asked for a "login page." Simple enough—or so it seemed. But what kind of login? Email and password? Social authentication? Multi-factor? What about password recovery flows, session management, or account lockout policies?</p>
+                <p class="animate-on-scroll">The client asked for a "login page." Simple enough—or so it seemed. But
+                    what kind of login? Email and password? Social authentication? Multi-factor? What about password
+                    recovery flows, session management, or account lockout policies?</p>
             </div>
 
             <div class="content-block animate-on-scroll">
                 <div class="content-block-text">
-                    <p>The development team had no structured way to deep-dive into the functional requirements. Without a framework for critical analysis, they built what they assumed was needed. Meanwhile, the Product Owner—caught between client expectations and engineering questions—struggled to ask the right questions to the right stakeholders at the right time. By the time the feature reached code review, "login page" had been interpreted five different ways by five different people</p>
-                    <p>This isn't about incompetence—it's about human communication. Without a single source of truth, interpretation becomes invention.</p>
+                    <p>The development team had no structured way to deep-dive into the functional requirements. Without
+                        a framework for critical analysis, they built what they assumed was needed. Meanwhile, the
+                        Product Owner—caught between client expectations and engineering questions—struggled to ask the
+                        right questions to the right stakeholders at the right time. By the time the feature reached
+                        code review, "login page" had been interpreted five different ways by five different people</p>
+                    <p>This isn't about incompetence—it's about human communication. Without a single source of truth,
+                        interpretation becomes invention.</p>
                 </div>
                 <figure class="content-block-image">
                     <img src="./img/telephone_game.png" alt="The telephone game effect showing message degradation">
@@ -1045,9 +1089,14 @@
         <div class="container">
             <div class="content-block reverse animate-on-scroll">
                 <div class="content-block-text">
-                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">The Context Vacuum Hides Among Us</h3>
-                    <p>Here's where the real pain emerged: engineers reviewing code for features they'd never heard of. A Senior Developer, engaged in another project during the original meeting, receives a pull request notification.</p>
-                    <p>They open it to find 2,000 lines of code implementing functionality they have zero context about. Without enough context and lack of familiarity with the codebase, assessing the code becomes a true nightmare for both sides.</p>
+                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">The
+                        Context Vacuum Hides Among Us</h3>
+                    <p>Here's where the real pain emerged: a senior developer, who was deep in another project when the
+                        feature was originally discussed, suddenly receives a pull request notification for code
+                        implementing functionality they know nothing about.</p>
+                    <p>They open it to find 2,000 lines of code implementing functionality they have zero context about.
+                        Without enough context and lack of familiarity with the codebase, assessing the code becomes a
+                        true nightmare for both sides.</p>
                 </div>
                 <figure class="content-block-image">
                     <img src="./img/context_vacuum.png" alt="Context vacuum between team members">
@@ -1060,9 +1109,15 @@
         <div class="container">
             <div class="content-block animate-on-scroll">
                 <div class="content-block-text">
-                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">And Obviously the Interpretation Maze</h3>
-                    <p>Same requirement, five different understandings. Each developer filled knowledge gaps with assumptions—and those assumptions rarely aligned.</p>
-                    <p>The business cost was staggering. Features that should have taken one sprint stretched across six. Requirement changes came constantly, derailing timelines and frustrating both the engineering team and our clients. Poor requirements gathering is cited as the leading cause of project failure in <strong>39% of cases</strong>, while <strong>57% of failing projects</strong> are attributed to communication breakdowns. <sup>[1]</sup></p>
+                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">And
+                        Obviously the Interpretation Maze</h3>
+                    <p>Same requirement, different understandings. Each developer filled knowledge gaps with
+                        assumptions—and those assumptions rarely aligned.</p>
+                    <p>The business cost was staggering. Features that should have taken one sprint stretched across
+                        six. Requirement changes came constantly, derailing timelines and frustrating both the
+                        engineering team and our clients. Poor requirements gathering is cited as the leading cause of
+                        project failure in <strong>39% of cases</strong>, while <strong>57% of failing projects</strong>
+                        are attributed to communication breakdowns. <sup>[1]</sup></p>
                     <p><em>We weren't just inefficient. We were burning trust with every missed deadline.</em></p>
                 </div>
                 <figure class="content-block-image">
@@ -1073,7 +1128,9 @@
         </div>
     </section>
 
-    <div class="container"><div class="divider"></div></div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
 
     <!-- Engineering Reality Section -->
     <section id="engineering">
@@ -1081,59 +1138,103 @@
             <div class="content">
                 <span class="section-label">The Technical Challenge</span>
                 <h2 class="section-title">The Engineering Reality</h2>
-                <p class="section-intro animate-on-scroll">While business stakeholders struggled with communication gaps, engineers faced their own silent battle—one that often went unspoken in retrospectives.</p>
+                <p class="section-intro animate-on-scroll">While business stakeholders struggled with communication
+                    gaps, engineers faced their own silent battle—one that often went unspoken in retrospectives.</p>
             </div>
 
             <div class="content-block animate-on-scroll">
                 <div class="content-block-text">
-                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">The Hidden Requirements Problem</h3>
-                    <p>The tickets told half the story. A ticket might say "implement payment processing," but what about error handling? Rate limiting? Retry logic?</p>
-                    <p>Engineers were expected to fill these gaps through intuition, and when their assumptions didn't match stakeholder expectations, it was labeled "poor development" rather than poor requirements.</p>
-                    <p><strong>The truth?</strong> Critical thinking and analysis that should happen before coding was happening during coding—or worse, during code review.</p>
-                </div>
+                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">The
+                        Hidden Requirements Problem</h3>
+                    <p>The tickets told half the story. A ticket might say "implement payment processing," but what
+                        about error handling? Rate limiting? Retry logic?</p>
+                    <p>Engineers were expected to fill these gaps through intuition, and when their assumptions didn't
+                        match stakeholder expectations, it was labeled "poor development" rather than poor requirements.
+                    </p>
+                    <p><strong>The truth?</strong> Essential architectural decisions and requirement clarifications that should happen before coding were instead happening during implementation—or worse, being debated in code reviews after the work was already done.</p>
+
+                        
+                    </div>
                 <figure class="content-block-image">
-                    <img src="./img/engineering_pain_points.png" alt="Engineering pain points solved by requirement documentation">
+                    <img src="./img/engineering_pain_points.png"
+                        alt="Engineering pain points solved by requirement documentation">
                     <figcaption>Engineering Pain Points Transformed</figcaption>
                 </figure>
             </div>
 
             <div class="content">
                 <h3 class="subsection-heading animate-on-scroll">The Architecture Vacuum</h3>
-                <p class="animate-on-scroll">Without established technical architecture, every developer approached problems differently. One engineer might build a monolithic solution; another might over-engineer with microservices. Neither was wrong—but neither was aligned. The result: inconsistent codebases, technical debt accumulating silently, and PR reviews that became battlegrounds for architectural philosophy rather than code quality.</p>
+                <p class="animate-on-scroll">Without established technical architecture, every developer approached
+                    problems differently. One engineer might build a monolithic solution; another might over-engineer
+                    with microservices. Neither was wrong—but neither was aligned. The result: inconsistent codebases,
+                    technical debt accumulating silently, and PR reviews that became battlegrounds for architectural
+                    philosophy rather than code quality.</p>
 
                 <h3 class="subsection-heading animate-on-scroll">The Endless PR Cycle</h3>
-                <p class="animate-on-scroll">Pull requests became a nightmare. A developer submits code. The reviewer—lacking context about requirements—questions the approach. The developer explains. The reviewer suggests changes based on their interpretation. Back and forth, round and round. What should take hours stretched into days. Research shows that code reviews without proper context become sources of frustration and even burnout for developers. <sup>[2]</sup></p>
+                <p class="animate-on-scroll">Pull requests became a nightmare. A developer submits code. The
+                    reviewer—lacking context about requirements—questions the approach. The developer explains. The
+                    reviewer suggests changes based on their interpretation. Back and forth, round and round. What
+                    should take hours stretched into days. Research shows that code reviews without proper context
+                    become sources of frustration and even burnout for developers. <sup>[2]</sup></p>
 
                 <h3 class="subsection-heading animate-on-scroll">The Estimation Challenge</h3>
-                <p class="animate-on-scroll">"How long will this take?" A reasonable question—but one that's nearly impossible to answer well without clarity. When system design hasn't been established and scope remains fluid, estimates become projections based on incomplete information. Engineers found themselves committing to timelines before fully understanding what they were building. When those timelines shifted (as they often did), it created friction—not because of poor judgment, but because the foundation for accurate estimation simply wasn't there.</p>
+                <p class="animate-on-scroll">"How long will this take?" A reasonable question—but one that's nearly
+                    impossible to answer well without clarity. When system design hasn't been established and scope
+                    remains fluid, estimates become projections based on incomplete information. Engineers found
+                    themselves committing to timelines before fully understanding what they were building. When those
+                    timelines shifted (as they often did), it created friction—not because of poor judgment, but because
+                    the foundation for accurate estimation simply wasn't there.</p>
 
                 <h3 class="subsection-heading animate-on-scroll">The Knowledge Black Hole</h3>
-                <p class="animate-on-scroll">Six months later, a bug appears in a feature. The original developer has moved on. The new engineer opens the code and asks: "Why was it built this way?" No documentation. No decision log. No context. They're left reverse-engineering intent from code comments (if they exist) and git blame.</p>
+                <p class="animate-on-scroll">Six months later, a bug appears in a feature. The original developer has
+                    moved on. The new engineer opens the code and asks: "Why was it built this way?" No documentation.
+                    No decision log. No context. They're left reverse-engineering intent from code comments (if they
+                    exist) and git blame.</p>
 
-                <div class="divider"></div>
 
-                <h3 class="subsection-heading animate-on-scroll">How the Requirement Document Transforms Engineering</h3>
-                <p class="animate-on-scroll">The same document that bridges communication gaps for business stakeholders fundamentally changes how engineers work:</p>
+                <h3 class="subsection-heading animate-on-scroll">How the Requirement Document Transforms Engineering
+                </h3>
+                <p class="animate-on-scroll">The same document that bridges communication gaps for business stakeholders
+                    fundamentally changes how engineers work:</p>
 
                 <h4 class="subsubsection-heading animate-on-scroll">From Reactive to Proactive Requirements</h4>
-                <p class="animate-on-scroll">The Functional and Non-Functional Requirements sections force critical thinking before development. Edge cases surface during documentation, not during QA. Questions get answered in the Q&A log, not in tickets or threads that disappear. Engineers finally have the complete picture—not just what to build, but what not to build.</p>
+                <p class="animate-on-scroll">The Functional and Non-Functional Requirements sections force critical
+                    thinking before development. Edge cases surface during documentation, not during QA. Questions get
+                    answered in the Q&A log, not in tickets or threads that disappear. Engineers finally have the
+                    complete picture—not just what to build, but what not to build.</p>
 
                 <h4 class="subsubsection-heading animate-on-scroll">From Chaos to Architecture</h4>
-                <p class="animate-on-scroll">High-Level Design (HLD) and Low-Level Design (LLD) establish technical direction before a single line of code is written. Use case diagrams, sequence diagrams, component diagrams—these aren't bureaucratic overhead. They're alignment tools. When every engineer understands the architectural vision, PRs become about implementation quality, not philosophical debates.</p>
+                <p class="animate-on-scroll">High-Level Design (HLD) and Low-Level Design (LLD) establish technical
+                    direction before a single line of code is written. Use case diagrams, sequence diagrams, component
+                    diagrams—these aren't bureaucratic overhead. They're alignment tools. When every engineer
+                    understands the architectural vision, PRs become about implementation quality, not philosophical
+                    debates.</p>
 
                 <h4 class="subsubsection-heading animate-on-scroll">From Guessing to Confident Estimation</h4>
-                <p class="animate-on-scroll">The Technical Feasibility Analysis and 3-Point Estimation work together. Engineers estimate against a designed system, not an abstract requirement. When business asks "how long?", engineers can point to specific subtasks, explain the optimistic and pessimistic scenarios, and provide data-backed timelines. Trust replaces tension.</p>
+                <p class="animate-on-scroll">The Technical Feasibility Analysis and 3-Point Estimation work together.
+                    Engineers estimate against a designed system, not an abstract requirement. When business asks "how
+                    long?", engineers can point to specific subtasks, explain the optimistic and pessimistic scenarios,
+                    and provide data-backed timelines. Trust replaces tension.</p>
 
                 <h4 class="subsubsection-heading animate-on-scroll">From Reviewer Confusion to Reviewer Confidence</h4>
-                <p class="animate-on-scroll">The Design Review & Sign-Off section creates a checkpoint. Before development begins, a reviewer confirms that the solution design addresses the requirements. When code finally reaches PR, reviewers aren't discovering the feature for the first time—they're validating that implementation matches an already-approved design. PR cycles shrink dramatically.</p>
+                <p class="animate-on-scroll">The Design Review & Sign-Off section creates a checkpoint. Before
+                    development begins, a reviewer confirms that the solution design addresses the requirements. When
+                    code finally reaches PR, reviewers aren't discovering the feature for the first time—they're
+                    validating that implementation matches an already-approved design. PR cycles shrink dramatically.
+                </p>
 
                 <h4 class="subsubsection-heading animate-on-scroll">From Lost Knowledge to Living Documentation</h4>
-                <p class="animate-on-scroll">The Decision Log captures why choices were made. The Reference Links preserve context. Six months later, when that bug appears, the new engineer doesn't reverse-engineer—they read. The document becomes institutional memory that outlives any individual team member.</p>
+                <p class="animate-on-scroll">The Decision Log captures why choices were made. The Reference Links
+                    preserve context. Six months later, when that bug appears, the new engineer doesn't
+                    reverse-engineer—they read. The document becomes institutional memory that outlives any individual
+                    team member.</p>
             </div>
         </div>
     </section>
 
-    <div class="container"><div class="divider"></div></div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
 
     <!-- Solution Section -->
     <section id="solution">
@@ -1141,21 +1242,31 @@
             <div class="content">
                 <span class="section-label">The Framework</span>
                 <h2 class="section-title">Solution</h2>
-                <p class="section-intro animate-on-scroll">We didn't need more communication channels. We needed a single source of truth.</p>
+                <p class="section-intro animate-on-scroll">We didn't need more communication channels. We needed a
+                    single source of truth.</p>
 
-                <p class="animate-on-scroll">The insight came from recognizing that our problem wasn't a lack of information— it was knowledge confined to a few individuals. The result of a communication gap in software development is a misalignment between what is expected and what is delivered.</p>
+                <p class="animate-on-scroll">The insight came from recognizing that our problem wasn't a lack of
+                    information— it was knowledge confined to a few individuals. The result of a communication gap in
+                    software development is a misalignment between what is expected and what is delivered.</p>
 
-                <p class="animate-on-scroll">Our solution was deceptively simple: a structured Requirement Document accessible to every team member, regardless of their involvement in initial discussions. Not paperwork for paperwork's sake—a team contract designed to bring any engineer up to speed in minutes.</p>
+                <p class="animate-on-scroll">Our solution was deceptively simple: a structured Requirement Document
+                    accessible to every team member, regardless of their involvement in initial discussions. Not
+                    paperwork for paperwork's sake—a team contract designed to bring any engineer up to speed in
+                    minutes.</p>
             </div>
 
             <div class="content-block animate-on-scroll">
                 <div class="content-block-text">
-                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">The Six Pillars</h3>
-                    <p>Our requirement document framework is built on six foundational pillars, each addressing a specific pain point in the development lifecycle.</p>
-                    <p>Together, they create a comprehensive blueprint that any team member can reference—ensuring alignment from conception to deployment.</p>
+                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">The Six
+                        Pillars</h3>
+                    <p>Our requirement document framework is built on six foundational pillars, each addressing a
+                        specific pain point in the development lifecycle.</p>
+                    <p>Together, they create a comprehensive blueprint that any team member can reference—ensuring
+                        alignment from conception to deployment.</p>
                 </div>
                 <figure class="content-block-image">
-                    <img src="./img/the_requirement_doc_blueprint.png" alt="The Requirement Document Blueprint showing six pillars">
+                    <img src="./img/requirement-doc-blue-print-light-theme.png"
+                        alt="The Requirement Document Blueprint showing six pillars">
                     <figcaption>The Requirement Document Blueprint</figcaption>
                 </figure>
             </div>
@@ -1165,12 +1276,17 @@
                 <div class="pillar-card animate-on-scroll">
                     <span class="pillar-number">1</span>
                     <h3 class="pillar-title">Requirement Gathering — "What are we building and why?"</h3>
-                    <p>This foundation section captures everything a developer needs to understand the feature's purpose:</p>
+                    <p>This foundation section captures everything a developer needs to understand the feature's
+                        purpose:</p>
                     <ul>
-                        <li><strong>Functional Requirements:</strong> The specific behaviors the system must exhibit</li>
-                        <li><strong>Non-Functional Requirements:</strong> Performance, security, and scalability expectations</li>
-                        <li><strong>Acceptance Criteria:</strong> The exact definition of "done," pulled directly from client meetings and tickets</li>
-                        <li><strong>Q&A Log:</strong> Every question asked and answered during discovery—tribal knowledge captured permanently</li>
+                        <li><strong>Functional Requirements:</strong> The specific behaviors the system must exhibit
+                        </li>
+                        <li><strong>Non-Functional Requirements:</strong> Performance, security, and scalability
+                            expectations</li>
+                        <li><strong>Acceptance Criteria:</strong> The exact definition of "done," pulled directly from
+                            client meetings and tickets</li>
+                        <li><strong>Q&A Log:</strong> Every question asked and answered during discovery—tribal
+                            knowledge captured permanently</li>
                         <li><strong>Priority & Timeline:</strong> Where this feature sits in the roadmap</li>
                         <li><strong>Dependencies:</strong> The watch-outs that could block progress</li>
                     </ul>
@@ -1182,11 +1298,14 @@
                     <h3 class="pillar-title">Planning — "How will we build it?"</h3>
                     <p>Before a single line of code is written, we establish:</p>
                     <ul>
-                        <li><strong>Technical Feasibility Analysis:</strong> Can we actually deliver this with our current architecture and resources?</li>
-                        <li><strong>3-Point Estimation Table:</strong> Our secret weapon for realistic timelines (more on this below)</li>
+                        <li><strong>Technical Feasibility Analysis:</strong> Can we actually deliver this with our
+                            current architecture and resources?</li>
+                        <li><strong>3-Point Estimation Table:</strong> Our secret weapon for realistic timelines (more
+                            on this below)</li>
                         <li><strong>Scope Definition:</strong> Clear boundaries of what's included</li>
                         <li><strong>Out of Scope:</strong> Equally important—what we explicitly won't build</li>
-                        <li><strong>Decision Log:</strong> Every technical decision made during development, with rationale</li>
+                        <li><strong>Decision Log:</strong> Every technical decision made during development, with
+                            rationale</li>
                     </ul>
                 </div>
 
@@ -1194,10 +1313,13 @@
                 <div class="pillar-card animate-on-scroll">
                     <span class="pillar-number">3</span>
                     <h3 class="pillar-title">System Design — "What does it look like?"</h3>
-                    <p>We try to provide significantly more emphasis on this section. As these are the visual documentation that transcends language barriers:</p>
+                    <p>We try to provide significantly more emphasis on this section. As these are the visual
+                        documentation that transcends language barriers:</p>
                     <ul>
-                        <li><strong>High-Level Design (HLD):</strong> We mostly use the use case diagram to provide a system overview</li>
-                        <li><strong>Low-Level Design (LLD):</strong> Sequence diagrams, component diagrams, and class structures provide a visual of the architecture</li>
+                        <li><strong>High-Level Design (HLD):</strong> We mostly use the use case diagram to provide a
+                            system overview</li>
+                        <li><strong>Low-Level Design (LLD):</strong> Sequence diagrams, component diagrams, and class
+                            structures provide a visual of the architecture</li>
                     </ul>
                 </div>
             </div>
@@ -1205,10 +1327,12 @@
             <!-- System Design Examples -->
             <div class="container">
                 <div class="content">
-                    <p class="animate-on-scroll">For instance, a login feature's use case diagram would look like this:</p>
+                    <p class="animate-on-scroll">For instance, a login feature's use case diagram would look like this:
+                    </p>
                 </div>
                 <figure class="image-full animate-on-scroll">
-                    <img src="./img/login_system.png" alt="UML Use Case Diagram for Login System" style="max-width: 700px;">
+                    <img src="./img/login_system.png" alt="UML Use Case Diagram for Login System"
+                        style="max-width: 700px;">
                     <figcaption>High-Level Design: Use Case Diagram for Login System</figcaption>
                 </figure>
 
@@ -1238,23 +1362,33 @@
                 <div class="pillar-card animate-on-scroll">
                     <span class="pillar-number">5</span>
                     <h3 class="pillar-title">Unit Testing Guidelines — "How do we prove it works?"</h3>
-                    <p>Testing expectations documented upfront, not discovered after the fact. This includes edge cases, expected behaviors, and coverage requirements—all defined before implementation begins.</p>
+                    <p>Testing expectations documented upfront, not discovered after the fact. This includes edge cases,
+                        expected behaviors, and coverage requirements—all defined before implementation begins.</p>
                 </div>
 
                 <!-- Pillar 6 -->
                 <div class="pillar-card animate-on-scroll">
                     <span class="pillar-number">6</span>
                     <h3 class="pillar-title">Reference Links — "Where can I learn more?"</h3>
-                    <p>Supporting materials, research, and external resources for deeper understanding. A curated collection of relevant documentation that grows with the feature.</p>
+                    <p>Supporting materials, research, and external resources for deeper understanding. A curated
+                        collection of relevant documentation that grows with the feature.</p>
                 </div>
 
                 <h3 class="subsection-heading animate-on-scroll">The Estimation Innovation</h3>
-                <p class="animate-on-scroll">Traditional estimation is guesswork dressed in confidence. We replaced it with the <strong>3-Point Estimation method</strong>—a formula that weights reality over optimism.</p>
+                <p class="animate-on-scroll">Traditional estimation is guesswork dressed in confidence. We replaced it
+                    with the <strong>3-Point Estimation method</strong>—a formula that weights reality over optimism.
+                </p>
                 <p class="animate-on-scroll">Instead of asking "How long will this take?" we ask three questions:</p>
                 <ul style="list-style: none; margin: 24px 0;">
-                    <li style="padding: 8px 0; color: var(--text-secondary);"><strong style="color: var(--accent-secondary);">Optimistic (O):</strong> Best-case scenario, everything goes perfectly</li>
-                    <li style="padding: 8px 0; color: var(--text-secondary);"><strong style="color: var(--accent-primary);">Most Likely (M):</strong> Realistic expectation based on experience</li>
-                    <li style="padding: 8px 0; color: var(--text-secondary);"><strong style="color: var(--accent-tertiary);">Pessimistic (P):</strong> Worst-case scenario, accounting for unknowns</li>
+                    <li style="padding: 8px 0; color: var(--text-secondary);"><strong
+                            style="color: var(--accent-secondary);">Optimistic (O):</strong> Best-case scenario,
+                        everything goes perfectly</li>
+                    <li style="padding: 8px 0; color: var(--text-secondary);"><strong
+                            style="color: var(--accent-primary);">Most Likely (M):</strong> Realistic expectation based
+                        on experience</li>
+                    <li style="padding: 8px 0; color: var(--text-secondary);"><strong
+                            style="color: var(--accent-tertiary);">Pessimistic (P):</strong> Worst-case scenario,
+                        accounting for unknowns</li>
                 </ul>
 
                 <div class="formula-block animate-on-scroll">
@@ -1264,9 +1398,13 @@
 
             <div class="content-block animate-on-scroll">
                 <div class="content-block-text">
-                    <p>For example, a subtask estimated at 2 days optimistic, 4 days likely, and 8 days pessimistic yields:</p>
-                    <p style="font-size: 1.25rem; color: var(--text-primary); margin: 16px 0;"><code style="background: var(--code-bg); padding: 8px 16px; border-radius: 6px; transition: background 0.3s ease;">(2 + 16 + 8) ÷ 6 = 4.3 days</code></p>
-                    <p>This approach accounts for uncertainty, gives business stakeholders reliable timelines, and—critically—documents our reasoning for future reference.</p>
+                    <p>For example, a subtask estimated at 2 days optimistic, 4 days likely, and 8 days pessimistic
+                        yields:</p>
+                    <p style="font-size: 1.25rem; color: var(--text-primary); margin: 16px 0;"><code
+                            style="background: var(--code-bg); padding: 8px 16px; border-radius: 6px; transition: background 0.3s ease;">(2 + 16 + 8) ÷ 6 = 4.3 days</code>
+                    </p>
+                    <p>This approach accounts for uncertainty, gives business stakeholders reliable timelines,
+                        and—critically—documents our reasoning for future reference.</p>
                 </div>
                 <figure class="content-block-image">
                     <img src="./img/the_3_point_estimation.png" alt="The 3-Point Estimation Method infographic">
@@ -1276,7 +1414,9 @@
         </div>
     </section>
 
-    <div class="container"><div class="divider"></div></div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
 
     <!-- Impact Section -->
     <section id="impact">
@@ -1284,18 +1424,31 @@
             <div class="content">
                 <span class="section-label">The Results</span>
                 <h2 class="section-title">Impact</h2>
-                <p class="section-intro animate-on-scroll">From 6 sprints to 1. That's not incremental improvement—that's a fundamental shift in how we deliver software.</p>
+                <p class="section-intro animate-on-scroll">From 6 sprints to 1. That's not incremental
+                    improvement—that's a fundamental shift in how we deliver software.</p>
             </div>
 
             <div class="content-block animate-on-scroll">
                 <div class="content-block-text">
-                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">The Quantified Wins</h3>
+                    <h3 style="font-family: 'Instrument Serif', serif; font-size: 1.75rem; margin-bottom: 20px;">The
+                        Quantified Wins</h3>
                     <p>The transformation was measurable from day one:</p>
                     <ul style="list-style: none; margin: 24px 0;">
-                        <li style="padding: 12px 0; color: var(--text-secondary); border-bottom: 1px solid var(--border-color);"><span style="color: var(--accent-secondary); font-weight: 600;">83% faster delivery</span> — from 6 sprints to 1</li>
-                        <li style="padding: 12px 0; color: var(--text-secondary); border-bottom: 1px solid var(--border-color);"><span style="color: var(--accent-secondary); font-weight: 600;">90% less requirement churn</span> — changes dropped to &lt;10%</li>
-                        <li style="padding: 12px 0; color: var(--text-secondary); border-bottom: 1px solid var(--border-color);"><span style="color: var(--accent-secondary); font-weight: 600;">100% team access</span> — all 10 members informed</li>
-                        <li style="padding: 12px 0; color: var(--text-secondary);"><span style="color: var(--accent-secondary); font-weight: 600;">Data-backed estimates</span> — using 3-point method</li>
+                        <li
+                            style="padding: 12px 0; color: var(--text-secondary); border-bottom: 1px solid var(--border-color);">
+                            <span style="color: var(--accent-secondary); font-weight: 600;">83% faster delivery</span> —
+                            from 6 sprints to 1</li>
+                        <li
+                            style="padding: 12px 0; color: var(--text-secondary); border-bottom: 1px solid var(--border-color);">
+                            <span style="color: var(--accent-secondary); font-weight: 600;">90% less requirement
+                                churn</span> — changes dropped to &lt;10%</li>
+                        <li
+                            style="padding: 12px 0; color: var(--text-secondary); border-bottom: 1px solid var(--border-color);">
+                            <span style="color: var(--accent-secondary); font-weight: 600;">100% team access</span> —
+                            all 10 members informed</li>
+                        <li style="padding: 12px 0; color: var(--text-secondary);"><span
+                                style="color: var(--accent-secondary); font-weight: 600;">Data-backed estimates</span> —
+                            using 3-point method</li>
                     </ul>
                 </div>
                 <figure class="content-block-image">
@@ -1312,40 +1465,56 @@
                 <div class="impact-card">
                     <span class="impact-role">Engineers</span>
                     <p class="impact-quote">"Finally, I'm reviewing code for a feature I understand."</p>
-                    <p class="impact-description">The context vacuum disappeared. When a developer opens a PR, they can reference the requirement document, understand the acceptance criteria, and provide meaningful feedback—not just syntax checks.</p>
+                    <p class="impact-description">The context vacuum disappeared. When a developer opens a PR, they can
+                        reference the requirement document, understand the acceptance criteria, and provide meaningful
+                        feedback—not just syntax checks.</p>
                 </div>
                 <div class="impact-card">
                     <span class="impact-role">Analysts</span>
                     <p class="impact-quote">"Questions answered once, documented forever."</p>
-                    <p class="impact-description">No more explaining the same requirement five different times to five different people. The Q&A log became institutional memory.</p>
+                    <p class="impact-description">No more explaining the same requirement five different times to five
+                        different people. The Q&A log became institutional memory.</p>
                 </div>
                 <div class="impact-card">
                     <span class="impact-role">Leadership</span>
                     <p class="impact-quote">"Predictable timelines we can actually commit to."</p>
-                    <p class="impact-description">The 3-Point Estimation method transformed vague promises into data-backed projections our clients could trust.</p>
+                    <p class="impact-description">The 3-Point Estimation method transformed vague promises into
+                        data-backed projections our clients could trust.</p>
                 </div>
                 <div class="impact-card">
                     <span class="impact-role">Client</span>
                     <p class="impact-quote">"A team that speaks our language."</p>
-                    <p class="impact-description">With everyone working from the same source of truth, our communication became clearer, our delivery more predictable.</p>
+                    <p class="impact-description">With everyone working from the same source of truth, our communication
+                        became clearer, our delivery more predictable.</p>
                 </div>
             </div>
 
             <div class="content">
                 <h3 class="subsection-heading animate-on-scroll">The Ripple Effects</h3>
-                
-                <p class="animate-on-scroll"><strong>Code reviews became meaningful.</strong> Well-structured code review processes ensure code quality, maintain consistency, and enable knowledge sharing—developers learn from each other through reviews. With context available, reviewers could assess whether the code actually solved the problem, not just whether it compiled.</p>
 
-                <p class="animate-on-scroll"><strong>Onboarding accelerated.</strong> New team members could get up to speed on any feature by reading a single document, rather than scheduling meetings with whoever might remember the details.</p>
+                <p class="animate-on-scroll"><strong>Code reviews became meaningful.</strong> Well-structured code
+                    review processes ensure code quality, maintain consistency, and enable knowledge sharing—developers
+                    learn from each other through reviews. With context available, reviewers could assess whether the
+                    code actually solved the problem, not just whether it compiled.</p>
 
-                <p class="animate-on-scroll"><strong>Scope creep became visible and manageable.</strong> When stakeholders requested changes, we could point to the documented scope and have informed conversations about trade-offs.</p>
+                <p class="animate-on-scroll"><strong>Onboarding accelerated.</strong> New team members could get up to
+                    speed on any feature by reading a single document, rather than scheduling meetings with whoever
+                    might remember the details.</p>
 
-                <p class="animate-on-scroll"><strong>Trust grew.</strong> Between business and engineering, between team members, between us and our clients. When everyone has access to the same information, collaboration replaces confusion.</p>
+                <p class="animate-on-scroll"><strong>Scope creep became visible and manageable.</strong> When
+                    stakeholders requested changes, we could point to the documented scope and have informed
+                    conversations about trade-offs.</p>
+
+                <p class="animate-on-scroll"><strong>Trust grew.</strong> Between business and engineering, between team
+                    members, between us and our clients. When everyone has access to the same information, collaboration
+                    replaces confusion.</p>
             </div>
         </div>
     </section>
 
-    <div class="container"><div class="divider"></div></div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
 
     <!-- Lessons Learned Section -->
     <section id="lessons">
@@ -1361,7 +1530,9 @@
                         <div class="lesson-number">1</div>
                         <div class="lesson-content">
                             <h4>Documentation is not bureaucracy—it's inclusion.</h4>
-                            <p>We thought we were "moving fast" by skipping documentation. We were actually moving in circles, solving the same misunderstandings repeatedly. The time invested in documenting requirements once saved exponentially more time in prevented confusion.</p>
+                            <p>We thought we were "moving fast" by skipping documentation. We were actually moving in
+                                circles, solving the same misunderstandings repeatedly. The time invested in documenting
+                                requirements once saved exponentially more time in prevented confusion.</p>
                         </div>
                     </div>
 
@@ -1369,7 +1540,9 @@
                         <div class="lesson-number">2</div>
                         <div class="lesson-content">
                             <h4>The person not in the room matters most.</h4>
-                            <p>Every feature will eventually be touched by someone who wasn't in the original meeting—a reviewer, a maintainer, a future team member. Design your documentation for them. When every engineer reviews code across the codebase, knowledge silos disappear.</p>
+                            <p>Every feature will eventually be touched by someone who wasn't in the original meeting—a
+                                reviewer, a maintainer, a future team member. Design your documentation for them. When
+                                every engineer reviews code across the codebase, knowledge silos disappear.</p>
                         </div>
                     </div>
 
@@ -1377,7 +1550,9 @@
                         <div class="lesson-number">3</div>
                         <div class="lesson-content">
                             <h4>Estimation is a team sport, not a guessing game.</h4>
-                            <p>The 3-Point method transformed estimation from finger-in-the-air guessing to data-informed prediction. More importantly, it gave everyone—engineers and business stakeholders alike—a common language for discussing timelines and uncertainty.</p>
+                            <p>The 3-Point method transformed estimation from finger-in-the-air guessing to
+                                data-informed prediction. More importantly, it gave everyone—engineers and business
+                                stakeholders alike—a common language for discussing timelines and uncertainty.</p>
                         </div>
                     </div>
 
@@ -1385,7 +1560,9 @@
                         <div class="lesson-number">4</div>
                         <div class="lesson-content">
                             <h4>Structure creates freedom.</h4>
-                            <p>A standardized document didn't slow us down—it eliminated the chaos that was slowing us down. When everyone knows where to find information and how it's organized, they can move faster with confidence.</p>
+                            <p>A standardized document didn't slow us down—it eliminated the chaos that was slowing us
+                                down. When everyone knows where to find information and how it's organized, they can
+                                move faster with confidence.</p>
                         </div>
                     </div>
 
@@ -1393,7 +1570,8 @@
                         <div class="lesson-number">5</div>
                         <div class="lesson-content">
                             <h4>A single source of truth beats multiple sources of confusion.</h4>
-                            <p>One document everyone trusts is infinitely more valuable than ten channels where information conflicts. We stopped debating what was decided and started executing.</p>
+                            <p>One document everyone trusts is infinitely more valuable than ten channels where
+                                information conflicts. We stopped debating what was decided and started executing.</p>
                         </div>
                     </div>
                 </div>
@@ -1406,18 +1584,28 @@
 
             <div class="content">
                 <h3 class="subsection-heading animate-on-scroll">The Bigger Picture</h3>
-                <p class="animate-on-scroll">Studies show that <strong>70% of digital transformation projects fail</strong>, and <strong>70% of those failures are due to issues with requirements</strong>—meaning nearly half of all projects fail because of requirements problems alone.<sup>[3]</sup></p>
-                <p class="animate-on-scroll">Our team was heading toward that statistic. The requirement document pulled us back.</p>
-                <p class="animate-on-scroll">The document didn't just solve a process problem. It changed how we think about collaboration. Knowledge isn't power when it's hoarded—it's power when it's shared. By making information accessible to everyone, we transformed a fragmented team into a unified force capable of delivering features at a pace we never thought possible.</p>
-                
+                <p class="animate-on-scroll">Studies show that <strong>70% of digital transformation projects
+                        fail</strong>, and <strong>70% of those failures are due to issues with
+                        requirements</strong>—meaning nearly half of all projects fail because of requirements problems
+                    alone.<sup>[3]</sup></p>
+                <p class="animate-on-scroll">Our team was heading toward that statistic. The requirement document pulled
+                    us back.</p>
+                <p class="animate-on-scroll">The document didn't just solve a process problem. It changed how we think
+                    about collaboration. Knowledge isn't power when it's hoarded—it's power when it's shared. By making
+                    information accessible to everyone, we transformed a fragmented team into a unified force capable of
+                    delivering features at a pace we never thought possible.</p>
+
                 <div class="highlight animate-on-scroll">
-                    Six sprints to one. That's the headline number. But the real transformation was cultural: a team that finally works from the same playbook, speaks the same language, and delivers with confidence.
+                    Six sprints to one. That's the headline number. But the real transformation was cultural: a team
+                    that finally works from the same playbook, speaks the same language, and delivers with confidence.
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container"><div class="divider"></div></div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
 
     <!-- References Section -->
     <section id="references">
@@ -1431,19 +1619,25 @@
                         <span class="ref-number">1</span>
                         <span class="ref-title">Software Survival in 2024: 2023 Statistics and Quality Assurance</span>
                         <span class="ref-source"> — Beta Breakers Quality Assurance Blog</span>
-                        <a href="https://www.betabreakers.com/blog/software-survival-in-2024-understanding-2023-project-failure-statistics-and-the-role-of-quality-assurance/" class="ref-link" target="_blank" rel="noopener">https://www.betabreakers.com/blog/software-survival-in-2024-understanding-2023-project-failure-statistics-and-the-role-of-quality-assurance/</a>
+                        <a href="https://www.betabreakers.com/blog/software-survival-in-2024-understanding-2023-project-failure-statistics-and-the-role-of-quality-assurance/"
+                            class="ref-link" target="_blank"
+                            rel="noopener">https://www.betabreakers.com/blog/software-survival-in-2024-understanding-2023-project-failure-statistics-and-the-role-of-quality-assurance/</a>
                     </li>
                     <li>
                         <span class="ref-number">2</span>
                         <span class="ref-title">Painful Code Reviews: The #3 Killer Of Developer Productivity</span>
                         <span class="ref-source"> — Hatica Engineering Blog, April 2023</span>
-                        <a href="https://www.hatica.io/blog/painful-code-reviews-killing-developer-productivity/" class="ref-link" target="_blank" rel="noopener">https://www.hatica.io/blog/painful-code-reviews-killing-developer-productivity/</a>
+                        <a href="https://www.hatica.io/blog/painful-code-reviews-killing-developer-productivity/"
+                            class="ref-link" target="_blank"
+                            rel="noopener">https://www.hatica.io/blog/painful-code-reviews-killing-developer-productivity/</a>
                     </li>
                     <li>
                         <span class="ref-number">3</span>
                         <span class="ref-title">Why Do Software Development Projects Fail?</span>
                         <span class="ref-source"> — Requiment Blog</span>
-                        <a href="https://www.requiment.com/why-do-software-development-projects-fail/" class="ref-link" target="_blank" rel="noopener">https://www.requiment.com/why-do-software-development-projects-fail/</a>
+                        <a href="https://www.requiment.com/why-do-software-development-projects-fail/" class="ref-link"
+                            target="_blank"
+                            rel="noopener">https://www.requiment.com/why-do-software-development-projects-fail/</a>
                     </li>
                 </ul>
             </div>
@@ -1460,7 +1654,7 @@
         // Theme Toggle
         const themeToggle = document.getElementById('themeToggle');
         const html = document.documentElement;
-        
+
         // Check for saved theme preference or default to dark
         const savedTheme = localStorage.getItem('theme') || 'dark';
         if (savedTheme === 'light') {
@@ -1470,13 +1664,13 @@
         themeToggle.addEventListener('click', () => {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
+
             if (newTheme === 'light') {
                 html.setAttribute('data-theme', 'light');
             } else {
                 html.removeAttribute('data-theme');
             }
-            
+
             localStorage.setItem('theme', newTheme);
         });
 
@@ -1531,5 +1725,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>
