@@ -947,6 +947,115 @@
             width: 0%;
             transition: width 0.1s linear;
         }
+
+        /* Client Quote Banner */
+        .client-quote {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 60px 0;
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .client-quote::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+        }
+
+        .client-quote::after {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-family: 'Instrument Serif', serif;
+            font-size: 8rem;
+            color: var(--accent-primary);
+            opacity: 0.08;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .client-quote-avatar {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--accent-primary);
+            box-shadow: 0 4px 20px rgba(88, 166, 255, 0.3);
+        }
+
+        .client-quote-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .client-quote-content {
+            flex: 1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .client-quote-text {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .client-quote-author {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .client-quote-name {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .client-quote-role {
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .client-quote {
+                flex-direction: column;
+                padding: 32px 24px;
+                text-align: center;
+                align-items: center;
+            }
+
+            .client-quote-avatar {
+                width: 70px;
+                height: 70px;
+            }
+
+            .client-quote-text {
+                font-size: 1.15rem;
+            }
+
+            .client-quote-author {
+                align-items: center;
+            }
+        }
     </style>
 </head>
 
@@ -1102,6 +1211,21 @@
                     <img src="./img/context_vacuum.png" alt="Context vacuum between team members">
                     <figcaption>The Context Vacuum</figcaption>
                 </figure>
+            </div>
+
+            <div class="content">
+                <div class="client-quote animate-on-scroll">
+                    <div class="client-quote-avatar">
+                        <img src="./img/client.png" alt="Dan Olk">
+                    </div>
+                    <div class="client-quote-content">
+                        <p class="client-quote-text">"The pain points are more to do with our unique platform. There are times when the team does not have access to areas of the platform to either complete the project/task or review it."</p>
+                        <div class="client-quote-author">
+                            <span class="client-quote-name">Dan Olk</span>
+                            <span class="client-quote-role">COO, Always Food Safe</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1272,6 +1396,21 @@
             </div>
 
             <div class="content">
+                <div class="client-quote animate-on-scroll">
+                    <div class="client-quote-avatar">
+                        <img src="./img/client.png" alt="Dan Olk">
+                    </div>
+                    <div class="client-quote-content">
+                        <p class="client-quote-text">"The process has enabled the team to initiating conversations and ask questions for clarification. Allowing for business to provide a clearer request for the issue needing to be addressed."</p>
+                        <div class="client-quote-author">
+                            <span class="client-quote-name">Dan Olk</span>
+                            <span class="client-quote-role">COO, Always Food Safe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
                 <!-- Pillar 1 -->
                 <div class="pillar-card animate-on-scroll">
                     <span class="pillar-number">1</span>
@@ -1356,6 +1495,19 @@
                         <li><strong>Review Summary:</strong> Gaps identified, improvements suggested</li>
                         <li><strong>Final Decision:</strong> The green light to build</li>
                     </ul>
+                </div>
+
+                <div class="client-quote animate-on-scroll">
+                    <div class="client-quote-avatar">
+                        <img src="./img/client.png" alt="Dan Olk">
+                    </div>
+                    <div class="client-quote-content">
+                        <p class="client-quote-text">"I do. The clarifications allow for better planning of the project/tasks and the development needs."</p>
+                        <div class="client-quote-author">
+                            <span class="client-quote-name">Dan Olk</span>
+                            <span class="client-quote-role">COO, Always Food Safe</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Pillar 5 -->
@@ -1458,6 +1610,21 @@
             </div>
 
             <div class="content">
+                <div class="client-quote animate-on-scroll">
+                    <div class="client-quote-avatar">
+                        <img src="./img/client.png" alt="Dan Olk">
+                    </div>
+                    <div class="client-quote-content">
+                        <p class="client-quote-text">"Very well. The work is very thorough and allows the work to be done quickly, efficiently, and without errors. On my part, I need to incorporate visibility. For example, on the tickets to indicate the estimate points a task or project will require."</p>
+                        <div class="client-quote-author">
+                            <span class="client-quote-name">Dan Olk</span>
+                            <span class="client-quote-role">COO, Always Food Safe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
                 <h3 class="subsection-heading animate-on-scroll">The Human Impact</h3>
             </div>
 
@@ -1486,6 +1653,21 @@
                     <p class="impact-quote">"A team that speaks our language."</p>
                     <p class="impact-description">With everyone working from the same source of truth, our communication
                         became clearer, our delivery more predictable.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="client-quote animate-on-scroll">
+                    <div class="client-quote-avatar">
+                        <img src="./img/client.png" alt="Dan Olk">
+                    </div>
+                    <div class="client-quote-content">
+                        <p class="client-quote-text">"Yes, significant improvement on the work being done."</p>
+                        <div class="client-quote-author">
+                            <span class="client-quote-name">Dan Olk</span>
+                            <span class="client-quote-role">COO, Always Food Safe</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
